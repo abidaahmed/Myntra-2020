@@ -19,11 +19,6 @@ public class MyntraAction {
 		PageFactory.initElements(SetUpDriver.chromeDriver, Act);
 	}
 	
-
-	
-	
-	
-	
 	public void getHomePage() {
 		SetUpDriver.chromeDriver.get("https://www.myntra.com/");
 		SetUpDriver.chromeDriver.manage().window().maximize();
@@ -46,9 +41,7 @@ public class MyntraAction {
 		
 	}
 	
-	
-	
-	
+
 	public void nikeBrand() throws Exception {
 		
 		for (String winHandle : SetUpDriver.chromeDriver.getWindowHandles() ) {
@@ -60,8 +53,7 @@ public class MyntraAction {
 		Thread.sleep(4000);
 	}
 		
-	
-	
+
 	public void searchitemdisplay() {
 		SetUpDriver.chromeDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		Act.searchitemdisplay.click();
